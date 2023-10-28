@@ -1,0 +1,32 @@
+/* In CSS we use 'selectors' to target a specific HTML tag for styling */
+/* The asterisk symbol stands forl 'all' which will target all HTML tags */
+* {
+	font-family: "Montserrat", sans-serif;
+}
+
+/* When selecting an HTML tag using its ID, we use the '#' symbol */
+/* When selecting an HTML tag using its class, we use the '.' symbol */
+#profile {
+	height: 250px;
+	width: 250px;
+
+	/* Responsible for making the img tag circular */
+	border-radius: 50%;
+}
+
+/* You can also select an HTML tag by directly using its tag name. */
+body {
+	background-color: #535353;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='530' height='63.6' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23121212' stroke-width='10' stroke-opacity='0.7'%3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+	background-attachment: fixed;
+}
+
+#landing {
+	height: 80vh;
+
+	/* Centers the content vertically using flexbox	*/
+	display: flex;
+	flex-direction: column;	/* Column is equal to Y-Axis or Top-to-bottom alignment */
+	justify-content: center;
+	align-items: center;
+}
